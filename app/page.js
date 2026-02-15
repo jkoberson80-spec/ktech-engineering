@@ -143,8 +143,8 @@ export default function Home() {
 
       {/* WHY US SECTION */}
       <section style={{
-        padding: "80px 40px",
-        backgroundColor: "white",
+        padding: "60px 40px",
+        backgroundColor: "#f8fafc",
         textAlign: "center"
       }}>
         <h2 style={{
