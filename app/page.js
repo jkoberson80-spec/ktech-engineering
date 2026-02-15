@@ -9,7 +9,7 @@ export default function Home() {
         color: "white",
         padding: "120px 40px",
         textAlign: "center",
-        padding: "40px"
+  
       }}>
         <div style={{ maxWidth: "900px" }}>
           <h1 style={{
