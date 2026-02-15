@@ -200,55 +200,106 @@ export default function Home() {
 </section>
 
       {/* WHY US SECTION */}
-      <section style={{
-        padding: "60px 40px",
-        backgroundColor: "#f8fafc",
-        textAlign: "center"
-      }}>
-        <h2 style={{
-          fontSize: "36px",
-          marginBottom: "60px",
-          color: "#0f172a"
-        }}>
-          Pourquoi Choisir KTECH Engineering ?
-        </h2>
+       {/* WHY US SECTION */}
+<section
+  style={{
+    padding: "120px 40px",
+    backgroundColor: "#f1f5f9",
+  }}
+>
+  <div
+    style={{
+      maxWidth: "1200px",
+      margin: "0 auto",
+      textAlign: "center",
+    }}
+  >
+    <h2
+      style={{
+        fontSize: "40px",
+        fontWeight: "700",
+        marginBottom: "20px",
+        color: "#0f172a",
+      }}
+    >
+      Pourquoi Choisir KTECH Engineering ?
+    </h2>
 
-        <div style={{
-          display: "flex",
-          justifyContent: "center",
-          gap: "40px",
-          flexWrap: "wrap"
-        }}>
+    <p
+      style={{
+        color: "#64748b",
+        maxWidth: "750px",
+        margin: "0 auto 80px auto",
+        fontSize: "18px",
+      }}
+    >
+      Nous combinons expertise technique, innovation et accompagnement
+      stratégique pour garantir des solutions fiables et durables.
+    </p>
 
-          <div style={{ maxWidth: "300px" }}>
-            <h3 style={{ color: "#1FA2B8", marginBottom: "15px" }}>
-              Expertise Technique
-            </h3>
-            <p style={{ color: "#475569" }}>
-              Une équipe spécialisée en cybersécurité, réseaux et infrastructures professionnelles.
-            </p>
-          </div>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        gap: "60px",
+        flexWrap: "wrap",
+        textAlign: "left",
+      }}
+    >
+      {/* ITEM 1 */}
+      <div style={{ maxWidth: "300px" }}>
+        <h3
+          style={{
+            color: "#1FA2B8",
+            marginBottom: "15px",
+            fontSize: "20px",
+          }}
+        >
+          Expertise Technique
+        </h3>
+        <p style={{ color: "#475569", lineHeight: "1.7" }}>
+          Une équipe hautement qualifiée en cybersécurité, réseaux et
+          infrastructures critiques.
+        </p>
+      </div>
 
-          <div style={{ maxWidth: "300px" }}>
-            <h3 style={{ color: "#1FA2B8", marginBottom: "15px" }}>
-              Solutions Sur Mesure
-            </h3>
-            <p style={{ color: "#475569" }}>
-              Chaque projet est étudié et conçu selon les besoins spécifiques de votre entreprise.
-            </p>
-          </div>
+      {/* ITEM 2 */}
+      <div style={{ maxWidth: "300px" }}>
+        <h3
+          style={{
+            color: "#1FA2B8",
+            marginBottom: "15px",
+            fontSize: "20px",
+          }}
+        >
+          Solutions Sur Mesure
+        </h3>
+        <p style={{ color: "#475569", lineHeight: "1.7" }}>
+          Chaque projet est conçu selon les besoins spécifiques et les enjeux
+          stratégiques de votre organisation.
+        </p>
+      </div>
 
-          <div style={{ maxWidth: "300px" }}>
-            <h3 style={{ color: "#1FA2B8", marginBottom: "15px" }}>
-              Support & Accompagnement
-            </h3>
-            <p style={{ color: "#475569" }}>
-              Assistance continue, maintenance et formation pour garantir la performance de vos systèmes.
-            </p>
-          </div>
+      {/* ITEM 3 */}
+      <div style={{ maxWidth: "300px" }}>
+        <h3
+          style={{
+            color: "#1FA2B8",
+            marginBottom: "15px",
+            fontSize: "20px",
+          }}
+        >
+          Support & Accompagnement
+        </h3>
+        <p style={{ color: "#475569", lineHeight: "1.7" }}>
+          Assistance continue, maintenance proactive et formation pour garantir
+          la performance durable de vos systèmes.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
-        </div>
-      </section>
     </>
   );
 }
