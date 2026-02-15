@@ -1,9 +1,10 @@
- import Link from "next/link";
+  import Link from "next/link";
 
 export default function Home() {
   return (
     <div style={{ textAlign: "center" }}>
       
+      {/* HERO SECTION */}
       <section style={{
         padding: "120px 20px"
       }}>
@@ -38,6 +39,61 @@ export default function Home() {
             Demander un audit
           </button>
         </Link>
+      </section>
+
+
+      {/* SECTION SERVICES */}
+      <section style={{
+        padding: "80px 20px",
+        backgroundColor: "#111827"
+      }}>
+        <h2 style={{
+          textAlign: "center",
+          marginBottom: "50px",
+          fontSize: "32px",
+          color: "#1FA2B8"
+        }}>
+          Nos Expertises
+        </h2>
+
+        <div style={{
+          display: "flex",
+          justifyContent: "center",
+          gap: "40px",
+          flexWrap: "wrap"
+        }}>
+
+          <div style={{
+            backgroundColor: "#0F172A",
+            padding: "30px",
+            width: "280px",
+            borderRadius: "8px"
+          }}>
+            <h3>🔐 Sécurité Électronique</h3>
+            <p>Vidéosurveillance, contrôle d’accès, alarmes intelligentes.</p>
+          </div>
+
+          <div style={{
+            backgroundColor: "#0F172A",
+            padding: "30px",
+            width: "280px",
+            borderRadius: "8px"
+          }}>
+            <h3>🌐 Réseaux & Infrastructure</h3>
+            <p>Installation, configuration et maintenance réseaux professionnels.</p>
+          </div>
+
+          <div style={{
+            backgroundColor: "#0F172A",
+            padding: "30px",
+            width: "280px",
+            borderRadius: "8px"
+          }}>
+            <h3>🛡️ Cybersécurité</h3>
+            <p>Audit, protection des systèmes et sécurisation des données.</p>
+          </div>
+
+        </div>
       </section>
 
     </div>
