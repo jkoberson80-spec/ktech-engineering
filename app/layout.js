@@ -11,11 +11,17 @@ export default function RootLayout({ children }) {
       }}>
         
         <nav style={{
-          backgroundColor: "#111827",
-          padding: "15px 40px",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center"
+          
+  backgroundColor: "#0f172a",
+  padding: "18px 60px",
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  position: "sticky",
+  top: 0,
+  zIndex: 1000,
+  borderBottom: "1px solid rgba(255,255,255,0.05)"
+      
         }}>
           <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
   <Image
