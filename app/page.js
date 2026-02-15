@@ -8,7 +8,7 @@ export default function Home() {
         <main style={{
   background: "linear-gradient(to right, #0f172a, #1e293b)",
   color: "white",
-  minHeight: "100vh",
+  minHeight: "calc(100vh - 60px)",
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
