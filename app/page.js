@@ -4,13 +4,18 @@ export default function Home() {
   return (
     <>
       {/* HERO SECTION */}
-      <main style={{
-        background: "linear-gradient(to right, #0f172a, #1e293b)",
-        color: "white",
-        padding: "120px 40px",
-        textAlign: "center",
-  
-      }}>
+   
+        <main style={{
+  background: "linear-gradient(to right, #0f172a, #1e293b)",
+  color: "white",
+  minHeight: "100vh",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  textAlign: "center",
+  padding: "0 40px"
+}}>
         <div style={{ maxWidth: "900px" }}>
          <div style={{ 
           maxWidth: "900px",
