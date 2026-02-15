@@ -1,15 +1,16 @@
-  import Link from "next/link";
+ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div style={{ textAlign: "center" }}>
+    <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
       
       {/* HERO SECTION */}
       <section style={{
-        padding: "120px 20px"
+        padding: "120px 20px",
+        textAlign: "center"
       }}>
         <h1 style={{
-          fontSize: "48px",
+          fontSize: "clamp(32px, 5vw, 48px)",
           marginBottom: "20px",
           color: "#1FA2B8"
         }}>
@@ -32,9 +33,10 @@ export default function Home() {
             fontSize: "16px",
             backgroundColor: "#1FA2B8",
             border: "none",
-            borderRadius: "5px",
+            borderRadius: "6px",
             cursor: "pointer",
-            fontWeight: "bold"
+            fontWeight: "bold",
+            transition: "0.3s"
           }}>
             Demander un audit
           </button>
@@ -59,39 +61,39 @@ export default function Home() {
         <div style={{
           display: "flex",
           justifyContent: "center",
-          gap: "40px",
+          gap: "30px",
           flexWrap: "wrap"
         }}>
 
-          <div style={{
-            backgroundColor: "#0F172A",
-            padding: "30px",
-            width: "280px",
-            borderRadius: "8px"
-          }}>
-            <h3>🔐 Sécurité Électronique</h3>
-            <p>Vidéosurveillance, contrôle d’accès, alarmes intelligentes.</p>
-          </div>
-
-          <div style={{
-            backgroundColor: "#0F172A",
-            padding: "30px",
-            width: "280px",
-            borderRadius: "8px"
-          }}>
-            <h3>🌐 Réseaux & Infrastructure</h3>
-            <p>Installation, configuration et maintenance réseaux professionnels.</p>
-          </div>
-
-          <div style={{
-            backgroundColor: "#0F172A",
-            padding: "30px",
-            width: "280px",
-            borderRadius: "8px"
-          }}>
-            <h3>🛡️ Cybersécurité</h3>
-            <p>Audit, protection des systèmes et sécurisation des données.</p>
-          </div>
+          {[
+            {
+              title: "🔐 Sécurité Électronique",
+              text: "Vidéosurveillance, contrôle d’accès, alarmes intelligentes."
+            },
+            {
+              title: "🌐 Réseaux & Infrastructure",
+              text: "Installation, configuration et maintenance réseaux professionnels."
+            },
+            {
+              title: "🛡️ Cybersécurité",
+              text: "Audit, protection des systèmes et sécurisation des données."
+            }
+          ].map((service, index) => (
+            <div
+              key={index}
+              style={{
+                backgroundColor: "#0F172A",
+                padding: "30px",
+                width: "300px",
+                borderRadius: "10px",
+                transition: "0.3s",
+                boxShadow: "0 0 0 rgba(0,0,0,0)"
+              }}
+            >
+              <h3 style={{ marginBottom: "15px" }}>{service.title}</h3>
+              <p>{service.text}</p>
+            </div>
+          ))}
 
         </div>
       </section>
