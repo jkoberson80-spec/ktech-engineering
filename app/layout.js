@@ -43,7 +43,10 @@ export default function RootLayout({ children }) {
           </div>
         </nav>
 
-        <main style={{ padding: "60px 20px" }}>
+        <main>
+  {children}
+</main>
+
           {children}
 <footer style={{
   backgroundColor: "#0f172a",
