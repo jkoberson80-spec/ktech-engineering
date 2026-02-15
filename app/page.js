@@ -67,5 +67,76 @@ export default function Home() {
         </div>
       </div>
     </main>
+<section style={{
+  padding: "80px 40px",
+  backgroundColor: "#f8fafc",
+  textAlign: "center"
+}}>
+  <h2 style={{
+    fontSize: "36px",
+    marginBottom: "60px",
+    color: "#0f172a"
+  }}>
+    Nos Domaines d’Expertise
+  </h2>
+
+  <div style={{
+    display: "flex",
+    justifyContent: "center",
+    gap: "30px",
+    flexWrap: "wrap"
+  }}>
+
+    {/* Carte 1 */}
+    <div style={{
+      backgroundColor: "white",
+      padding: "30px",
+      width: "300px",
+      borderRadius: "12px",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.08)"
+    }}>
+      <h3 style={{ marginBottom: "15px", color: "#1FA2B8" }}>
+        Sécurité Électronique
+      </h3>
+      <p style={{ color: "#475569" }}>
+        Surveillance, contrôle d’accès, systèmes de sécurité avancés pour entreprises.
+      </p>
+    </div>
+
+    {/* Carte 2 */}
+    <div style={{
+      backgroundColor: "white",
+      padding: "30px",
+      width: "300px",
+      borderRadius: "12px",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.08)"
+    }}>
+      <h3 style={{ marginBottom: "15px", color: "#1FA2B8" }}>
+        Réseaux & Infrastructure IT
+      </h3>
+      <p style={{ color: "#475569" }}>
+        Conception, installation et maintenance des infrastructures informatiques professionnelles.
+      </p>
+    </div>
+
+    {/* Carte 3 */}
+    <div style={{
+      backgroundColor: "white",
+      padding: "30px",
+      width: "300px",
+      borderRadius: "12px",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.08)"
+    }}>
+      <h3 style={{ marginBottom: "15px", color: "#1FA2B8" }}>
+        Cybersécurité & Conseil
+      </h3>
+      <p style={{ color: "#475569" }}>
+        Audit, protection des données, accompagnement stratégique et formation.
+      </p>
+    </div>
+
+  </div>
+</section>
+
   );
 }
