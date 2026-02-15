@@ -137,6 +137,56 @@ export default function Home() {
 
   </div>
 </section>
+<section style={{
+  padding: "80px 40px",
+  backgroundColor: "white",
+  textAlign: "center"
+}}>
+  <h2 style={{
+    fontSize: "36px",
+    marginBottom: "60px",
+    color: "#0f172a"
+  }}>
+    Pourquoi Choisir KTECH Engineering ?
+  </h2>
+
+  <div style={{
+    display: "flex",
+    justifyContent: "center",
+    gap: "40px",
+    flexWrap: "wrap"
+  }}>
+
+    <div style={{ maxWidth: "300px" }}>
+      <h3 style={{ color: "#1FA2B8", marginBottom: "15px" }}>
+        Expertise Technique
+      </h3>
+      <p style={{ color: "#475569" }}>
+        Une équipe spécialisée en cybersécurité, réseaux et infrastructures professionnelles.
+      </p>
+    </div>
+
+    <div style={{ maxWidth: "300px" }}>
+      <h3 style={{ color: "#1FA2B8", marginBottom: "15px" }}>
+        Solutions Sur Mesure
+      </h3>
+      <p style={{ color: "#475569" }}>
+        Chaque projet est étudié et conçu selon les besoins spécifiques de votre entreprise.
+      </p>
+    </div>
+
+    <div style={{ maxWidth: "300px" }}>
+      <h3 style={{ color: "#1FA2B8", marginBottom: "15px" }}>
+        Support & Accompagnement
+      </h3>
+      <p style={{ color: "#475569" }}>
+        Assistance continue, maintenance et formation pour garantir la performance de vos systèmes.
+      </p>
+    </div>
+
+  </div>
+</section>
+
 
   );
 }
