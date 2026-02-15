@@ -3,23 +3,33 @@
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
-      <body style={{ margin: 0, fontFamily: "Arial, sans-serif" }}>
+      <body style={{
+        margin: 0,
+        fontFamily: "Arial, sans-serif",
+        backgroundColor: "#0F172A",
+        color: "white"
+      }}>
         
-        {/* NAVBAR */}
         <nav style={{
-          backgroundColor: "#111",
-          padding: "15px",
+          backgroundColor: "#111827",
+          padding: "15px 40px",
           display: "flex",
-          justifyContent: "center",
-          gap: "30px"
+          justifyContent: "space-between",
+          alignItems: "center"
         }}>
-          <Link href="/" style={{ color: "white", textDecoration: "none" }}>Accueil</Link>
-          <Link href="/services" style={{ color: "white", textDecoration: "none" }}>Services</Link>
-          <Link href="/securite" style={{ color: "white", textDecoration: "none" }}>Sécurité</Link>
-          <Link href="/contact" style={{ color: "white", textDecoration: "none" }}>Contact</Link>
+          <div style={{ fontWeight: "bold", fontSize: "20px", color: "#1FA2B8" }}>
+            KTECH ENGINEERING
+          </div>
+
+          <div style={{ display: "flex", gap: "25px" }}>
+            <Link href="/" style={{ color: "white", textDecoration: "none" }}>Accueil</Link>
+            <Link href="/services" style={{ color: "white", textDecoration: "none" }}>Services</Link>
+            <Link href="/securite" style={{ color: "white", textDecoration: "none" }}>Sécurité</Link>
+            <Link href="/contact" style={{ color: "white", textDecoration: "none" }}>Contact</Link>
+          </div>
         </nav>
 
-        <main style={{ padding: "40px", textAlign: "center" }}>
+        <main style={{ padding: "60px 20px" }}>
           {children}
         </main>
 
