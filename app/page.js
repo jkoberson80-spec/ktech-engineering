@@ -16,11 +16,10 @@ export default function Home() {
   textAlign: "center",
   padding: "0 40px"
 }}>
-        <div style={{ maxWidth: "900px" }}>
-         <div style={{ 
-          maxWidth: "900px",
-          margin: "0 auto"
-             }}>
+        <div style={{
+  maxWidth: "900px",
+  margin: "0 auto"
+}}> 
 
           <h1 style={{
             fontSize: "48px",
@@ -73,8 +72,8 @@ export default function Home() {
                 Demander un devis
               </button>
             </Link>
-          </div>
-        </div>
+          
+        </div>       
       </main>
 
       {/* SERVICES SECTION */}
