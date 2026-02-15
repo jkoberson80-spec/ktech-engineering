@@ -299,6 +299,73 @@ export default function Home() {
     </div>
   </div>
 </section>
+{/* STATS SECTION */}
+<section
+  style={{
+    padding: "120px 40px",
+    background: "linear-gradient(135deg, #0f172a, #1e293b)",
+    color: "white",
+  }}
+>
+  <div
+    style={{
+      maxWidth: "1200px",
+      margin: "0 auto",
+      textAlign: "center",
+    }}
+  >
+    <h2
+      style={{
+        fontSize: "40px",
+        fontWeight: "700",
+        marginBottom: "80px",
+      }}
+    >
+      Nos Chiffres Clés
+    </h2>
+
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        gap: "80px",
+        flexWrap: "wrap",
+      }}
+    >
+      {/* STAT 1 */}
+      <div>
+        <h3 style={{ fontSize: "48px", color: "#1FA2B8", marginBottom: "10px" }}>
+          +120
+        </h3>
+        <p style={{ color: "#cbd5e1" }}>Projets réalisés</p>
+      </div>
+
+      {/* STAT 2 */}
+      <div>
+        <h3 style={{ fontSize: "48px", color: "#1FA2B8", marginBottom: "10px" }}>
+          +50
+        </h3>
+        <p style={{ color: "#cbd5e1" }}>Clients accompagnés</p>
+      </div>
+
+      {/* STAT 3 */}
+      <div>
+        <h3 style={{ fontSize: "48px", color: "#1FA2B8", marginBottom: "10px" }}>
+          98%
+        </h3>
+        <p style={{ color: "#cbd5e1" }}>Taux de satisfaction</p>
+      </div>
+
+      {/* STAT 4 */}
+      <div>
+        <h3 style={{ fontSize: "48px", color: "#1FA2B8", marginBottom: "10px" }}>
+          24/7
+        </h3>
+        <p style={{ color: "#cbd5e1" }}>Support & assistance</p>
+      </div>
+    </div>
+  </div>
+</section>
 
     </>
   );
