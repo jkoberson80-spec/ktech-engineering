@@ -1,5 +1,5 @@
  import Link from "next/link";
-
+import Image from "next/image";
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
@@ -17,9 +17,19 @@ export default function RootLayout({ children }) {
           justifyContent: "space-between",
           alignItems: "center"
         }}>
-          <div style={{ fontWeight: "bold", fontSize: "20px", color: "#1FA2B8" }}>
-            KTECH ENGINEERING
-          </div>
+          <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+  <Image
+    src="/logo.png"
+    alt="KTECH Engineering Logo"
+    width={40}
+    height={40}
+    priority
+  />
+  <span style={{ fontWeight: "bold", fontSize: "20px", color: "#1FA2B8" }}>
+    KTECH ENGINEERING
+  </span>
+</div>
+
 
           <div style={{ display: "flex", gap: "25px" }}>
             <Link href="/" style={{ color: "white", textDecoration: "none" }}>Accueil</Link>
