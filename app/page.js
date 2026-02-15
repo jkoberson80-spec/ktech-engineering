@@ -91,73 +91,113 @@ export default function Home() {
 </main>
 
       {/* SERVICES SECTION */}
-      <section style={{
-        padding: "80px 40px 40px 40px",
-        backgroundColor: "#f8fafc",
-        textAlign: "center"
-      }}>
-        <h2 style={{
-          fontSize: "36px",
-          marginBottom: "60px",
-          color: "#0f172a"
-        }}>
-          Nos Domaines d’Expertise
-        </h2>
+      
+<section
+  style={{
+    padding: "120px 40px",
+    backgroundColor: "#ffffff",
+  }}
+>
+  <div
+    style={{
+      maxWidth: "1200px",
+      margin: "0 auto",
+      textAlign: "center",
+    }}
+  >
+    <h2
+      style={{
+        fontSize: "40px",
+        fontWeight: "700",
+        marginBottom: "20px",
+        color: "#0f172a",
+      }}
+    >
+      Nos Domaines d’Expertise
+    </h2>
 
-        <div style={{
-          display: "flex",
-          justifyContent: "center",
-          gap: "30px",
-          flexWrap: "wrap"
-        }}>
+    <p
+      style={{
+        color: "#64748b",
+        maxWidth: "700px",
+        margin: "0 auto 80px auto",
+        fontSize: "18px",
+      }}
+    >
+      Des solutions technologiques complètes adaptées aux exigences des
+      entreprises modernes.
+    </p>
 
-          <div style={{
-            backgroundColor: "white",
-            padding: "30px",
-            width: "300px",
-            borderRadius: "12px",
-            boxShadow: "0 10px 30px rgba(0,0,0,0.08)"
-          }}>
-            <h3 style={{ marginBottom: "15px", color: "#1FA2B8" }}>
-              Sécurité Électronique
-            </h3>
-            <p style={{ color: "#475569" }}>
-              Surveillance, contrôle d’accès, systèmes de sécurité avancés pour entreprises.
-            </p>
-          </div>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        gap: "40px",
+        flexWrap: "wrap",
+      }}
+    >
+      {/* CARD 1 */}
+      <div
+        style={{
+          backgroundColor: "#f8fafc",
+          padding: "40px 30px",
+          width: "320px",
+          borderRadius: "16px",
+          boxShadow: "0 15px 40px rgba(0,0,0,0.06)",
+          transition: "0.3s",
+        }}
+      >
+        <h3 style={{ marginBottom: "20px", color: "#1FA2B8" }}>
+          Sécurité Électronique
+        </h3>
+        <p style={{ color: "#475569", lineHeight: "1.6" }}>
+          Surveillance intelligente, contrôle d’accès et systèmes de sécurité
+          avancés pour entreprises et institutions.
+        </p>
+      </div>
 
-          <div style={{
-            backgroundColor: "white",
-            padding: "30px",
-            width: "300px",
-            borderRadius: "12px",
-            boxShadow: "0 10px 30px rgba(0,0,0,0.08)"
-          }}>
-            <h3 style={{ marginBottom: "15px", color: "#1FA2B8" }}>
-              Réseaux & Infrastructure IT
-            </h3>
-            <p style={{ color: "#475569" }}>
-              Conception, installation et maintenance des infrastructures informatiques professionnelles.
-            </p>
-          </div>
+      {/* CARD 2 */}
+      <div
+        style={{
+          backgroundColor: "#f8fafc",
+          padding: "40px 30px",
+          width: "320px",
+          borderRadius: "16px",
+          boxShadow: "0 15px 40px rgba(0,0,0,0.06)",
+          transition: "0.3s",
+        }}
+      >
+        <h3 style={{ marginBottom: "20px", color: "#1FA2B8" }}>
+          Réseaux & Infrastructure IT
+        </h3>
+        <p style={{ color: "#475569", lineHeight: "1.6" }}>
+          Conception, déploiement et maintenance d’infrastructures
+          informatiques performantes et sécurisées.
+        </p>
+      </div>
 
-          <div style={{
-            backgroundColor: "white",
-            padding: "30px",
-            width: "300px",
-            borderRadius: "12px",
-            boxShadow: "0 10px 30px rgba(0,0,0,0.08)"
-          }}>
-            <h3 style={{ marginBottom: "15px", color: "#1FA2B8" }}>
-              Cybersécurité & Conseil
-            </h3>
-            <p style={{ color: "#475569" }}>
-              Audit, protection des données, accompagnement stratégique et formation.
-            </p>
-          </div>
-
-        </div>
-      </section>
+      {/* CARD 3 */}
+      <div
+        style={{
+          backgroundColor: "#f8fafc",
+          padding: "40px 30px",
+          width: "320px",
+          borderRadius: "16px",
+          boxShadow: "0 15px 40px rgba(0,0,0,0.06)",
+          transition: "0.3s",
+        }}
+      >
+        <h3 style={{ marginBottom: "20px", color: "#1FA2B8" }}>
+          Cybersécurité & Conseil
+        </h3>
+        <p style={{ color: "#475569", lineHeight: "1.6" }}>
+          Audit, protection des données, accompagnement stratégique et
+          formation pour garantir la résilience numérique.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* WHY US SECTION */}
       <section style={{
