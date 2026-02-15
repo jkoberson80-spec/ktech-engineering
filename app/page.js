@@ -12,6 +12,11 @@ export default function Home() {
   
       }}>
         <div style={{ maxWidth: "900px" }}>
+         <div style={{ 
+          maxWidth: "900px",
+          margin: "0 auto"
+             }}>
+
           <h1 style={{
             fontSize: "48px",
             fontWeight: "bold",
