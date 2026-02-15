@@ -7,10 +7,7 @@ export default function Home() {
       <main style={{
         background: "linear-gradient(to right, #0f172a, #1e293b)",
         color: "white",
-        minHeight: "90vh",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
+        padding: "120px 40px",
         textAlign: "center",
         padding: "40px"
       }}>
