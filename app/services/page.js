@@ -287,6 +287,7 @@ export default function Services() {
 </div>
       {/* CTA PREMIUM */}
       
+ 
 <div style={{ marginTop: "120px" }}>
   <h3
     style={{
@@ -327,6 +328,7 @@ export default function Services() {
     <a
       href="https://wa.me/237677612062"
       target="_blank"
+      rel="noopener noreferrer"
       style={{
         padding: "18px 40px",
         borderRadius: "50px",
@@ -335,15 +337,17 @@ export default function Services() {
         fontWeight: "600",
         fontSize: "16px",
         textDecoration: "none",
-        boxShadow: "0 15px 40px rgba(37,99,235,0.3)",
+        boxShadow: "0 15px 40px rgba(0,0,0,0.2)",
       }}
     >
       💬 Contact WhatsApp
     </a>
+  
 </div>
     </main>
   );
 }
+
 
 
 
