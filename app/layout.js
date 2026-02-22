@@ -115,7 +115,9 @@ export default function RootLayout({ children }) {
                 Contact
               </h4>
               <p>Email : contact@ktech-engineering.com</p>
-              <p>Téléphone : +XXX XXX XXX</p>
+              <p>
+  <a href="tel:+237677612062">📞 +237 677 612 062</a>
+</p>
               <p>Douala, Cameroun</p>
             </div>
           </div>
