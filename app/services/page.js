@@ -5,34 +5,36 @@ export default function Services() {
     <main
       style={{
         padding: "140px 40px",
-        backgroundColor: "#f8fafc",
+        background: "linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%)",
         minHeight: "100vh",
         textAlign: "center",
       }}
     >
+      {/* TITRE */}
       <h1
         style={{
-          fontSize: "48px",
+          fontSize: "52px",
           fontWeight: "800",
           marginBottom: "20px",
           color: "#0f172a",
         }}
       >
-        Nos Services
+        Services Premium
       </h1>
 
       <p
         style={{
           maxWidth: "750px",
-          margin: "0 auto 80px auto",
+          margin: "0 auto 100px auto",
           fontSize: "18px",
           color: "#64748b",
         }}
       >
-        Des solutions technologiques complètes pour accompagner les
-        entreprises dans leur transformation numérique et leur sécurité.
+        Des solutions technologiques haut de gamme pour garantir performance,
+        sécurité et innovation.
       </p>
 
+      {/* CARTES */}
       <div
         style={{
           display: "flex",
@@ -43,45 +45,59 @@ export default function Services() {
       >
         {[
           {
+            icon: "🔐",
             title: "Sécurité Électronique",
-            text: "Surveillance intelligente, contrôle d’accès et systèmes de sécurité avancés.",
+            text: "Surveillance intelligente, contrôle d’accès et systèmes avancés pour entreprises.",
           },
           {
+            icon: "🌐",
             title: "Réseaux & Infrastructure IT",
-            text: "Conception, déploiement et maintenance d’infrastructures performantes.",
+            text: "Déploiement d’infrastructures performantes, sécurisées et évolutives.",
           },
           {
+            icon: "🛡️",
             title: "Cybersécurité & Conseil",
-            text: "Audit de sécurité, protection des données et accompagnement stratégique.",
+            text: "Audit, protection des données et accompagnement stratégique.",
           },
         ].map((service, index) => (
           <div
             key={index}
             style={{
-              backgroundColor: "white",
-              padding: "50px 40px",
-              width: "340px",
-              borderRadius: "22px",
-              boxShadow: "0 25px 60px rgba(0,0,0,0.07)",
+              background: "rgba(255,255,255,0.7)",
+              backdropFilter: "blur(10px)",
+              padding: "60px 45px",
+              width: "360px",
+              borderRadius: "28px",
+              boxShadow: "0 30px 70px rgba(15,23,42,0.08)",
               transition: "all 0.4s ease",
               cursor: "pointer",
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.transform = "translateY(-15px)";
+              e.currentTarget.style.transform = "translateY(-18px)";
               e.currentTarget.style.boxShadow =
-                "0 30px 70px rgba(0,0,0,0.15)";
+                "0 35px 80px rgba(15,23,42,0.15)";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = "translateY(0px)";
               e.currentTarget.style.boxShadow =
-                "0 25px 60px rgba(0,0,0,0.07)";
+                "0 30px 70px rgba(15,23,42,0.08)";
             }}
           >
+            <div
+              style={{
+                fontSize: "40px",
+                marginBottom: "25px",
+              }}
+            >
+              {service.icon}
+            </div>
+
             <h3
               style={{
-                marginBottom: "25px",
-                color: "#1FA2B8",
-                fontSize: "22px",
+                marginBottom: "20px",
+                color: "#0f172a",
+                fontSize: "24px",
+                fontWeight: "700",
               }}
             >
               {service.title}
@@ -99,6 +115,33 @@ export default function Services() {
           </div>
         ))}
       </div>
+
+      {/* CTA PREMIUM */}
+      <div style={{ marginTop: "120px" }}>
+        <a
+          href="/contact"
+          style={{
+            padding: "18px 40px",
+            borderRadius: "50px",
+            background: "linear-gradient(90deg, #1FA2B8, #2563eb)",
+            color: "white",
+            fontWeight: "600",
+            fontSize: "16px",
+            textDecoration: "none",
+            boxShadow: "0 15px 40px rgba(37,99,235,0.3)",
+            transition: "all 0.3s ease",
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.transform = "scale(1.05)";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.transform = "scale(1)";
+          }}
+        >
+          Discutons de votre projet
+        </a>
+      </div>
     </main>
   );
 }
+
