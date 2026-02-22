@@ -42,84 +42,86 @@ export default function Home() {
     <>
       {/* HERO SECTION */}
       <main
-        style={{
-          background: "linear-gradient(135deg, #0f172a, #1e293b)",
-          color: "white",
-          padding: "160px 40px 140px 40px",
-          textAlign: "center",
-        }}
-      >
-        <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-          <h1
-            style={{
-              fontSize: "56px",
-              fontWeight: "800",
-              lineHeight: "1.2",
-              marginBottom: "30px",
-            }}
-          >
-            Solutions Technologiques & Sécurité Professionnelle
-          </h1>
+  style={{
+    background: "radial-gradient(circle at top left, #1e293b, #0f172a)",
+    color: "white",
+    padding: "180px 40px",
+    position: "relative",
+    overflow: "hidden",
+  }}
+>
+  <div
+    style={{
+      maxWidth: "1200px",
+      margin: "0 auto",
+      textAlign: "center",
+      position: "relative",
+      zIndex: 2,
+    }}
+  >
+    <h1
+      style={{
+        fontSize: "64px",
+        fontWeight: "800",
+        marginBottom: "30px",
+        letterSpacing: "-1px",
+      }}
+    >
+      L’Excellence Technologique
+      <br />
+      au Service des Entreprises
+    </h1>
 
-          <p
-            style={{
-              fontSize: "22px",
-              color: "#cbd5e1",
-              maxWidth: "800px",
-              margin: "0 auto 50px auto",
-              lineHeight: "1.7",
-            }}
-          >
-            KTECH Engineering accompagne les entreprises dans la cybersécurité,
-            les réseaux informatiques, la surveillance électronique et
-            l’infrastructure technologique avec des solutions fiables et sur mesure.
-          </p>
+    <p
+      style={{
+        fontSize: "22px",
+        color: "#cbd5e1",
+        maxWidth: "800px",
+        margin: "0 auto 60px auto",
+        lineHeight: "1.7",
+      }}
+    >
+      Cybersécurité, infrastructures IT et sécurité électronique
+      pour organisations exigeantes en Afrique centrale.
+    </p>
 
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              gap: "25px",
-              flexWrap: "wrap",
-            }}
-          >
-            <Link href="/services">
-              <button
-                style={{
-                  padding: "16px 32px",
-                  backgroundColor: "#1FA2B8",
-                  color: "white",
-                  border: "none",
-                  borderRadius: "10px",
-                  fontWeight: "bold",
-                  fontSize: "16px",
-                  cursor: "pointer",
-                }}
-              >
-                Découvrir nos services
-              </button>
-            </Link>
+    <div style={{ display: "flex", justifyContent: "center", gap: "25px" }}>
+      <Link href="/contact">
+        <button
+          style={{
+            padding: "18px 40px",
+            background: "linear-gradient(135deg, #1FA2B8, #2563eb)",
+            border: "none",
+            borderRadius: "12px",
+            fontWeight: "bold",
+            fontSize: "16px",
+            cursor: "pointer",
+            boxShadow: "0 10px 30px rgba(31,162,184,0.3)",
+          }}
+        >
+          Démarrer un projet
+        </button>
+      </Link>
 
-            <Link href="/contact">
-              <button
-                style={{
-                  padding: "16px 32px",
-                  backgroundColor: "transparent",
-                  color: "#1FA2B8",
-                  border: "2px solid #1FA2B8",
-                  borderRadius: "10px",
-                  fontWeight: "bold",
-                  fontSize: "16px",
-                  cursor: "pointer",
-                }}
-              >
-                Demander un devis
-              </button>
-            </Link>
-          </div>
-        </div>
-      </main>
-
+      <Link href="/services">
+        <button
+          style={{
+            padding: "18px 40px",
+            backgroundColor: "transparent",
+            border: "2px solid #1FA2B8",
+            borderRadius: "12px",
+            color: "#1FA2B8",
+            fontWeight: "bold",
+            fontSize: "16px",
+            cursor: "pointer",
+          }}
+        >
+          Voir nos expertises
+        </button>
+      </Link>
+    </div>
+  </div>
+</main>
       {/* SERVICES SECTION */}
       <section
         style={{
