@@ -1,6 +1,7 @@
 export default function About() {
   return (
     <main className="min-h-screen bg-white text-gray-900">
+      
       {/* HERO */}
       <section className="py-24 px-6 text-center bg-gradient-to-r from-blue-900 to-indigo-800 text-white">
         <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -33,6 +34,7 @@ export default function About() {
           </h2>
 
           <div className="grid md:grid-cols-2 gap-10">
+
             <div>
               <h3 className="text-xl font-semibold mb-3">Infrastructure Réseau</h3>
               <p className="text-gray-600">
@@ -64,6 +66,7 @@ export default function About() {
                 évolutives adaptées aux structures en croissance.
               </p>
             </div>
+
           </div>
         </div>
       </section>
