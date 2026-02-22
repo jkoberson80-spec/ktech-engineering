@@ -115,7 +115,110 @@ export default function Services() {
           </div>
         ))}
       </div>
+{/* POURQUOI NOUS CHOISIR */}
+<div style={{ marginTop: "140px" }}>
+  <h2
+    style={{
+      fontSize: "40px",
+      fontWeight: "800",
+      marginBottom: "20px",
+      color: "#0f172a",
+    }}
+  >
+    Pourquoi nous choisir
+  </h2>
 
+  <p
+    style={{
+      maxWidth: "700px",
+      margin: "0 auto 80px auto",
+      fontSize: "18px",
+      color: "#64748b",
+    }}
+  >
+    Nous combinons expertise technique, innovation et excellence
+    opérationnelle pour offrir des solutions fiables et durables.
+  </p>
+
+  <div
+    style={{
+      display: "flex",
+      justifyContent: "center",
+      gap: "40px",
+      flexWrap: "wrap",
+    }}
+  >
+    {[
+      {
+        icon: "⚡",
+        title: "Intervention Rapide",
+        text: "Réactivité maximale pour assurer continuité et sécurité.",
+      },
+      {
+        icon: "🎓",
+        title: "Expertise Certifiée",
+        text: "Équipe qualifiée avec forte expérience terrain.",
+      },
+      {
+        icon: "🔒",
+        title: "Solutions Sécurisées",
+        text: "Approche centrée sur la protection des données.",
+      },
+      {
+        icon: "🤝",
+        title: "Accompagnement Sur Mesure",
+        text: "Stratégie personnalisée adaptée à votre activité.",
+      },
+    ].map((item, index) => (
+      <div
+        key={index}
+        style={{
+          width: "260px",
+          padding: "40px 25px",
+          borderRadius: "22px",
+          background: "white",
+          boxShadow: "0 20px 50px rgba(15,23,42,0.07)",
+          transition: "all 0.4s ease",
+        }}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.transform = "translateY(-12px)";
+          e.currentTarget.style.boxShadow =
+            "0 25px 60px rgba(15,23,42,0.15)";
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.transform = "translateY(0px)";
+          e.currentTarget.style.boxShadow =
+            "0 20px 50px rgba(15,23,42,0.07)";
+        }}
+      >
+        <div style={{ fontSize: "32px", marginBottom: "20px" }}>
+          {item.icon}
+        </div>
+
+        <h4
+          style={{
+            fontSize: "18px",
+            fontWeight: "700",
+            marginBottom: "15px",
+            color: "#0f172a",
+          }}
+        >
+          {item.title}
+        </h4>
+
+        <p
+          style={{
+            fontSize: "14px",
+            color: "#64748b",
+            lineHeight: "1.7",
+          }}
+        >
+          {item.text}
+        </p>
+      </div>
+    ))}
+  </div>
+</div>
       {/* CTA PREMIUM */}
       <div style={{ marginTop: "120px" }}>
         <a
@@ -144,4 +247,5 @@ export default function Services() {
     </main>
   );
 }
+
 
