@@ -286,33 +286,65 @@ export default function Services() {
   </div>
 </div>
       {/* CTA PREMIUM */}
-      <div style={{ marginTop: "120px" }}>
-        <a
-          href="/contact"
-          style={{
-            padding: "18px 40px",
-            borderRadius: "50px",
-            background: "linear-gradient(90deg, #1FA2B8, #2563eb)",
-            color: "white",
-            fontWeight: "600",
-            fontSize: "16px",
-            textDecoration: "none",
-            boxShadow: "0 15px 40px rgba(37,99,235,0.3)",
-            transition: "all 0.3s ease",
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.transform = "scale(1.05)";
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.transform = "scale(1)";
-          }}
-        >
-          Discutons de votre projet
-        </a>
-      </div>
+      
+<div style={{ marginTop: "120px" }}>
+  <h3
+    style={{
+      fontSize: "26px",
+      marginBottom: "30px",
+      color: "#0f172a",
+    }}
+  >
+    Discutons de votre projet dès aujourd’hui
+  </h3>
+
+  <div
+    style={{
+      display: "flex",
+      justifyContent: "center",
+      gap: "20px",
+      flexWrap: "wrap",
+    }}
+  >
+    {/* EMAIL */}
+    <a
+      href="mailto:contact@ktech-engineering.com"
+      style={{
+        padding: "18px 40px",
+        borderRadius: "50px",
+        background: "linear-gradient(90deg, #1FA2B8, #2563eb)",
+        color: "white",
+        fontWeight: "600",
+        fontSize: "16px",
+        textDecoration: "none",
+        boxShadow: "0 15px 40px rgba(37,99,235,0.3)",
+      }}
+    >
+      📧 Nous écrire par email
+    </a>
+
+    {/* WHATSAPP */}
+    <a
+      href="https://wa.me/237677612062"
+      target="_blank"
+      style={{
+        padding: "18px 40px",
+        borderRadius: "50px",
+        backgroundColor: "#25D366",
+        color: "white",
+        fontWeight: "600",
+        fontSize: "16px",
+        textDecoration: "none",
+        boxShadow: "0 15px 40px rgba(37,99,235,0.3)",
+      }}
+    >
+      💬 Contact WhatsApp
+    </a>
+</div>
     </main>
   );
 }
+
 
 
 
