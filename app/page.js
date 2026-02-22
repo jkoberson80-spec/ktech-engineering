@@ -228,6 +228,26 @@ export default function Home() {
             </div>
           ))}
         </div>
+           <div style={{ marginTop: "80px", textAlign: "center" }}>
+  <a
+    href="https://wa.me/237677612062?text=Bonjour%20KTECH%20Engineering,%20je%20souhaite%20discuter%20d’un%20projet."
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      padding: "18px 40px",
+      backgroundColor: "#25D366",
+      color: "white",
+      borderRadius: "50px",
+      fontWeight: "600",
+      fontSize: "16px",
+      textDecoration: "none",
+      boxShadow: "0 15px 35px rgba(37,211,102,0.4)",
+      transition: "0.3s ease",
+    }}
+  >
+    💬 Discuter sur WhatsApp
+  </a>
+</div>
       </section>
     </>
   );
