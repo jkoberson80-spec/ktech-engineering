@@ -89,7 +89,25 @@ export default function Home() {
     </div>
   </div>
 </main>
+// components/ZoneIntervention.js
 
+export default function ZoneIntervention() {
+  return (
+    <section className="py-16 bg-gray-50 text-center">
+      <h2 className="text-3xl font-bold mb-6">
+        Zone d’Intervention
+      </h2>
+
+      <p className="max-w-2xl mx-auto text-lg text-gray-600">
+        KTECH Engineering accompagne les entreprises basées à
+        <strong> Douala (siège)</strong>, partout au <strong>Cameroun</strong> 
+        et dans toute l’<strong>Afrique Centrale</strong>.
+        Nous intervenons pour la cybersécurité, les infrastructures IT,
+        la vidéosurveillance et la maintenance des systèmes informatiques.
+      </p>
+    </section>
+  );
+}
       {/* SERVICES SECTION */}
       
 <section
