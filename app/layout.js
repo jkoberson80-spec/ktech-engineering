@@ -114,7 +114,14 @@ export default function RootLayout({ children }) {
               <h4 style={{ color: "white", marginBottom: "15px" }}>
                 Contact
               </h4>
-              <p>Email : contact@ktech-engineering.com</p>
+              <p>
+  <a
+    href="mailto:contact@ktech-engineering.com"
+    style={{ color: "#1FA2B8", textDecoration: "none", fontWeight: "500" }}
+  >
+    📧 contact@ktech-engineering.com
+  </a>
+</p>
               <p>
   <a href="tel:+237677612062">📞 +237 677 612 062</a>
 </p>
