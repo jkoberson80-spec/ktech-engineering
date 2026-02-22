@@ -1,4 +1,6 @@
- export default function Services() {
+ "use client";
+
+export default function Services() {
   return (
     <main
       style={{
@@ -8,7 +10,6 @@
         textAlign: "center",
       }}
     >
-      {/* TITRE */}
       <h1
         style={{
           fontSize: "48px",
@@ -32,7 +33,6 @@
         entreprises dans leur transformation numérique et leur sécurité.
       </p>
 
-      {/* CARTES */}
       <div
         style={{
           display: "flex",
@@ -44,11 +44,11 @@
         {[
           {
             title: "Sécurité Électronique",
-            text: "Surveillance intelligente, contrôle d’accès et systèmes de sécurité avancés pour entreprises et institutions.",
+            text: "Surveillance intelligente, contrôle d’accès et systèmes de sécurité avancés.",
           },
           {
             title: "Réseaux & Infrastructure IT",
-            text: "Conception, déploiement et maintenance d’infrastructures performantes et sécurisées.",
+            text: "Conception, déploiement et maintenance d’infrastructures performantes.",
           },
           {
             title: "Cybersécurité & Conseil",
