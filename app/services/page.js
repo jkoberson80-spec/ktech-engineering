@@ -342,11 +342,12 @@ export default function Services() {
     >
       💬 Contact WhatsApp
     </a>
-  
+  </div>
 </div>
     </main>
   );
 }
+
 
 
 
