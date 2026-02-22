@@ -219,6 +219,72 @@ export default function Services() {
     ))}
   </div>
 </div>
+{/* CHIFFRES CLÉS */}
+<div
+  style={{
+    marginTop: "140px",
+    padding: "100px 40px",
+    background: "linear-gradient(90deg, #0f172a, #1e293b)",
+    borderRadius: "30px",
+    color: "white",
+  }}
+>
+  <h2
+    style={{
+      fontSize: "38px",
+      fontWeight: "800",
+      marginBottom: "70px",
+    }}
+  >
+    Nos Chiffres Clés
+  </h2>
+
+  <div
+    style={{
+      display: "flex",
+      justifyContent: "center",
+      gap: "70px",
+      flexWrap: "wrap",
+    }}
+  >
+    {[
+      { number: "150+", label: "Projets réalisés" },
+      { number: "98%", label: "Clients satisfaits" },
+      { number: "10+", label: "Années d'expérience" },
+      { number: "24/7", label: "Support & assistance" },
+    ].map((item, index) => (
+      <div
+        key={index}
+        style={{
+          textAlign: "center",
+          minWidth: "180px",
+        }}
+      >
+        <div
+          style={{
+            fontSize: "48px",
+            fontWeight: "800",
+            marginBottom: "15px",
+            background: "linear-gradient(90deg, #1FA2B8, #38bdf8)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+          }}
+        >
+          {item.number}
+        </div>
+
+        <div
+          style={{
+            fontSize: "16px",
+            color: "#cbd5e1",
+          }}
+        >
+          {item.label}
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
       {/* CTA PREMIUM */}
       <div style={{ marginTop: "120px" }}>
         <a
@@ -247,5 +313,6 @@ export default function Services() {
     </main>
   );
 }
+
 
 
