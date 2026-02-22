@@ -1,7 +1,6 @@
 export default function About() {
   return (
     <main className="min-h-screen bg-white text-gray-900">
-
       {/* HERO */}
       <section className="py-24 px-6 text-center bg-gradient-to-r from-blue-900 to-indigo-800 text-white">
         <h1 className="text-4xl md:text-5xl font-bold mb-6">
